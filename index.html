@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Assignment Solution for Module 2</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-  }
-  h1 {
-    text-align: center;
-    font-weight: bold;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  .item {
-    background-color: gray;
-    width: 30%;
-    padding: 10px;
-    border: 2px solid black;
-    position: relative;
-  }
-  .item h2 {
-    margin-top: 0;
-  }
-  .label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    border-radius: 0 0 0 5px;
-  }
-  .label.chicken {
-    background-color: #f4cccc;
-    color: #660000;
-  }
-  .label.beef {
-    background-color: #f4cccc;
-    color: #660000;
-  }
-  .label.sushi {
-    background-color: #fff2cc;
-    color: #664d00;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment Solution for Module 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .item {
+      background-color: gray;
+      border: 2px solid black;
+      padding: 10px;
+      position: relative;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px 10px;
+      border-radius: 0 0 0 5px;
+    }
+
+    .label.chicken {
+      background-color: #f4cccc;
+      color: #660000;
+    }
+
+    .label.beef {
+      background-color: #f4cccc;
+      color: #660000;
+    }
+
+    .label.sushi {
+      background-color: #fff2cc;
+      color: #664d00;
+    }
+
+    .item h2 {
+      margin-top: 30px;
+    }
+
+    /* ✅ Media query for desktop layout */
+    @media (min-width: 992px) {
+      .item {
+        width: 30%;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <h1>Our Menu</h1>
-  <div class="menu">
-    <div class="item">
-      <div class="label chicken">Chicken</div>
-      <h2>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
-    </div>
-    <div class="item">
-      <div class="label beef">Beef</div>
-      <h2>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
-    </div>
-    <div class="item">
-      <div class="label sushi">Sushi</div>
-      <h2>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+  <div class="container">
+    <h1>Our Menu</h1>
+    <div class="menu">
+      <div class="item">
+        <div class="label chicken">Chicken</div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h2>
+      </div>
+      <div class="item">
+        <div class="label beef">Beef</div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h2>
+      </div>
+      <div class="item">
+        <div class="label sushi">Sushi</div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h2>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
